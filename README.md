@@ -44,14 +44,14 @@ yum install gcc-c++
 openssl安装
 tar zxvf openssl-fips-2.0.10.tar.gz
 cd pcre-8.40
-./configure && make && make install
+./Configure && make && make install
 ```
 
 ```
 pcre安装
 tar zxvf pcre-8.40.tar.gz
 cd pcre-8.40
-./configure && make && make install
+./config && make && make install
 ```
 
 ```
@@ -73,7 +73,7 @@ cd nginx-1.10.2
 #### 1、查看nginx安装位置
 
 ```
-whereis nginix
+whereis nginx
 nginx:/usr/local/nginx
 ```
 
@@ -116,7 +116,7 @@ cd /usr/local/nginx
 
 ```
 把项目代码发到nginx的 html/issWeb/build 下,从启动nginx服务
-sbin/nginx -s reload
+./sbin/nginx -s reload
 ```
 
 #### 2、开启外网访问
